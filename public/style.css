@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #005;
+}
+
+header {
+  background-image: linear-gradient(to top right, #005 20%, #407);
+  opacity: 95%;
+  margin: auto -16px;
+  padding: 0px 32px;
+  box-shadow: 0 0 5px 0 rgba(140, 0, 255, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #title {
+  text-decoration: none;
+}
+
+header h1 {
+  /* font-family: "McLaren", cursive; */
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.sell-buy form {
+  height: 78vh;
+  width: 500px;
+  margin: 30px auto 20px auto;
+  background: #005;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgba(140, 0, 255, 0.6);
+}
+
+.sell-buy form h2{
+  text-align: center;
+  margin: 20px auto 30px auto;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.sell-buy form .form-group{
+  margin: 20px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-buy form label{
+  padding: 4px;
+  font-size: 1.2em;
+  font-family: inherit;
+}
+
+form input, form button, form select{
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color:#000;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+form button{
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #407;
+    cursor: pointer;
+    background: #007;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+form[name="client" i] {
+  border: 2px solid rgb(144, 0, 255);
+}
+
+form[name="supplier" i] {
+  border: 2px solid rgb(100, 0, 255);
+}
+
+.alert{
+  width: 40%;
+  margin: auto;
+  position: relative;
+  bottom: 450px; 
+  scale: 1.3;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.sell-buy form select option{
+  color: #000;
+}
+
+
+/* Home page */
+
+.content{
+  width: 99%;
+  min-height: 90vh;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px;
+  gap: 40px;
+  margin-left: 700px;
+}
+
+@media (max-width: 1280px) {
+  .buttons {
+    margin-left: 500px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .buttons {
+    margin-left: 350px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .buttons {
+    margin-left: 230px;
+  }
+}
+
+@media (max-width: 780px) {
+  .buttons {
+    margin-left: 170px;
+  }
+  .buttons #link p {
+    display: none;
+  }
+  .sell-buy form {
+    width: 400px;
+  }
+}
+
+#link{
+  height: 100%;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+#link:hover, .data-info .box:hover , td:hover, #discover:hover{
+  background-color: #ffffff55;
+}
+
+#discover {
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  scale: 2;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.menu{
+  position: absolute;
+  top: 62px;
+  right: 5px;
+  background-image: linear-gradient(to bottom left, #005 20%, #407);
+  width: 200px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+#link .img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #005;
+}
+
+.title-info{
+  background-color: rgb(140, 0, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.feed {
+  text-align: center;
+}
+.feed h2 {
+  margin: 30px;
+  font-weight: 100;
+  font-size: 30px;
+  color: rgb(140, 0, 255, 0.6);
+}
+
+.data-info{
+  margin: 8px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.data-info .box{
+  background-color: #123;
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.data-info .box i{
+  font-size: 40px;
+}
+.data-info .box .data{
+  text-align: center;
+}
+.data-info .box .data span{
+  font-size: 30px;
+}
+table{
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+th,td{
+  background-color: #123;
+  height: 40px;
+  width: 100px;
+}
+th{
+  background-color: rgb(140, 0, 255, 0.6);
+}
+table #count{
+  max-width: 60px;
+}
+.field, .supplier, .client, .max, .supplierAgent, .clientAgent{
+  padding: 6px;
+  border-radius: 6px;
+}
+.field{
+  background-color: #407;
+}
+.max{
+  background-color: rgba(0, 140, 255, 0.4);
+}
+.supplier{
+  background-color: #f00;
+}
+.client{
+  background-color: #0c0;
+}
+.list{
+  min-height: 90vh;
+}
+.charts {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.chart, .information{
+  flex: 1 0 400px;
+  border: 1px solid #407;
+  z-index: -1;
+}
+
+.pieCharts, .pieInformation {
+  flex: 1 0 600px;
+  border: 2px solid #407;
+}
+
+.operation-info-forBuy, .operation-info-forSell, .no-operation{
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+.operation-info-forBuy{
+  background-color: #f00;
+}
+.operation-info-forSell{
+  background-color: #0c0;
+}
+.no-operation{
+  background-color: #000;
+}
+button[class= "setNew"]{
+  background-color: #007;
+  height: 50px;
+  width: 200px;
+  margin: 20px 0 10px calc(100vw - 230px);
+  border: 1px solid #407;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1em;
+  font-family: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+button[class= "setNew"]:hover, form[class="add"] button:hover{
+  scale: 1.1;
+  background-color: #407;
+  border: 2px solid #007;
+}
+form[class="add"]{
+  height: 180px;
+  width: 400px;
+  background: #005;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgba(140, 0, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 110px;
+  left: calc(50vw - 200px);
+}
+form[class="add"] input{
+  margin-top: 30px;
+  padding: 10px;
+}
+form[class="add"] submit{
+  cursor: pointer;
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.about-us {
+  min-height: 100vh;
+  margin: 20px 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.about-us p {
+  font-size: 20px;
+  word-spacing: 7px;
+  line-height: 40px;
+}
+.about-us .img {
+  width: 400px;
+  border-radius: 50%;
+  border: 5px solid rgba(140, 0, 255, 0.6);
+}
+

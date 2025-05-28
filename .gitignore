@@ -1,0 +1,10 @@
+node_modules/
+src/components/Form(Testing).jsx
+src/components/Select(Testing).jsx
+src/components/ClientsList(Testing).jsx
+src/components/SuppliersList(Testing).jsx
+src/components/ProductList(Testing).jsx
+.firebase
+dist
+.firebaserc
+firebase.json
