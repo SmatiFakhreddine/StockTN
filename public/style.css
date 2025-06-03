@@ -43,8 +43,11 @@ footer p {
   color: #ccc;
 }
 
+.sell-buy{
+  min-height: 89vh;
+}
+
 .sell-buy form {
-  height: 78vh;
   width: 500px;
   margin: 30px auto 20px auto;
   background: #005;
